@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color: rgb(0, 20, 74);
+            background: linear-gradient(to right, rgb(71, 148, 236),rgb(0, 73, 156));
            
         }
         .login{
@@ -59,16 +59,29 @@
             margin-top:10% ;
         }
         #icon{
-           background-color: white;
+           background-color: rgb(0, 64, 255);
            border-radius: 50%;
+           box-shadow: 0px 0px 30px 2px rgb(0, 102, 255);
+           border: solid 1px rgb(0, 102, 255);
            
+        }
+        .area{
+            width: 400px;
+            box-shadow:0px 0px 30px 2px  rgb(231, 235, 240);
+            opacity: 0.8;
+            border: none;
+            border-radius: 20px;
+            background-color: black;
+            padding-bottom: 30px;
+            padding-right: 35px;
+            padding-top: 20px;
         }
         
     </style>
 </head>
 <body> <center>
     <form class="form">
-    <div class="box" >
+      <fieldset class="area">
         <h1 class="user">USER LOGIN </h1>
      <img src="./icons/user.png" width="30" id="icon">
         <input  class="username" type="text" placeholder="Username"><br><br>
@@ -76,8 +89,9 @@
         <input class="password" type="password" placeholder="Password"  >
         <img src="./icons/locked-computer.png"width="30" id="icon"> <br><br>
        <button class="login"> <b>LOGIN</b></button>
+    </fieldset>
 </form>
 
-    </div></center>
+    </center>
 </body>
 </html>
